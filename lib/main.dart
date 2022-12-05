@@ -47,7 +47,7 @@ class SplashScreenState extends State<MyHomePage> {
   Widget build(BuildContext context) {
    return Container(
      color: Colors.white70,
-      child: Image.asset('assets/images/launch_image.png',
+      child: Image.asset('assets/images/srigo2-01.png',
         width: 200.00,
         height: 200.00,
 
