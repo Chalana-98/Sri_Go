@@ -32,6 +32,7 @@ class MyHomePage extends StatefulWidget {
   SplashScreenState createState()=> SplashScreenState();
 }
 class SplashScreenState extends State<MyHomePage> {
+
   @override
   void initState(){
     super.initState();

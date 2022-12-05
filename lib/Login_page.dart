@@ -4,14 +4,22 @@ import 'package:sri_go/Register_page.dart';
 
 
 class Login_page extends StatelessWidget{
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       backgroundColor: Colors.white70,
+       backgroundColor: Colors.white,
+        appBar: AppBar(
+          leading: IconButton(onPressed: (){
+            Navigator.pop(context);
+          },icon:Icon(Icons.arrow_back_ios,size: 20,color: Colors.black,)),
+        ),
 
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
+
               Padding(
                 padding: const EdgeInsets.only(top: 60.0),
                 child: Center(
