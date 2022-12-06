@@ -50,7 +50,7 @@ class Login_page extends StatelessWidget{
                         /*decoration: BoxDecoration(
                           color: Colors.red,
                           borderRadius: BorderRadius.circular(50.0)),*/
-                        child: Image.asset('assets/images/srigo2-01.png')),
+                        child: Image.asset('assets/images/srigo3-01.png')),
                   ),
                 ),
                 Padding(

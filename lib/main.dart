@@ -104,7 +104,7 @@ class HomeScreen extends StatelessWidget {
 
                       borderRadius: BorderRadius.circular(6.0),
                       image: DecorationImage(
-                        image: AssetImage('assets/images/photo_2.jpg'),
+                        image: AssetImage('assets/images/photo_2.png'),
                         fit: BoxFit.contain,
                       ),
 
@@ -118,7 +118,7 @@ class HomeScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(6.0),
                       image: DecorationImage(
-                        image: AssetImage('assets/images/photo_1.jpg'),
+                        image: AssetImage('assets/images/photo_1.png'),
                         fit: BoxFit.contain,
                       ),
                     ),
@@ -129,7 +129,7 @@ class HomeScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(6.0),
                       image: DecorationImage(
-                        image: AssetImage('assets/images/photo_3.jpg'),
+                        image: AssetImage('assets/images/photo_3.png'),
                         fit: BoxFit.contain,
                       ),
                     ),

@@ -51,7 +51,7 @@ class Register_page extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
 
-                        Image.asset('assets/images/srigo2-01.png',height: 150,width: 150,),
+                        Image.asset('assets/images/srigo3-01.png',height: 150,width: 150,),
                         SizedBox(height: 50,),
                        /* Text("Create an Account,Its free",style: TextStyle(
                           fontSize: 15,
