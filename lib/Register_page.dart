@@ -7,10 +7,12 @@ class Register_page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       resizeToAvoidBottomInset: false,
       //resizeToAvoidBottomPadding: false,
       //backgroundColor: Colors.white70,
       appBar: AppBar(
+
        /* centerTitle: true,
         title: Text ("Sign up", style: TextStyle(
           fontSize: 30,
@@ -19,7 +21,7 @@ class Register_page extends StatelessWidget {
         ),),*/
         elevation: 1,
         brightness: Brightness.dark,
-       // backgroundColor: Colors.white70,
+       backgroundColor: Colors.purple,
         leading:
         IconButton( onPressed: (){
           Navigator.pop(context);
@@ -28,7 +30,16 @@ class Register_page extends StatelessWidget {
       body: SafeArea(
 
         child: SingleChildScrollView(
+
           child: Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage(
+                      'assets/images/back1-01.png'),
+                fit: BoxFit.cover
+              )
+            ),
+
             height: MediaQuery.of(context).size.height,
             width: double.infinity,
             child: Column(
@@ -46,13 +57,13 @@ class Register_page extends StatelessWidget {
                           fontSize: 15,
                           color: Colors.grey[700],
                         ),),*/
-                        SizedBox(height: 30,)
+                        SizedBox(height: 10,)
                       ],
                     ),
 
                     Padding(
                       //padding: const EdgeInsets.only(left:15.0,right: 15.0,top:0,bottom: 0),
-                      padding: EdgeInsets.symmetric(horizontal: 15),
+                      padding: EdgeInsets.symmetric(horizontal: 015),
                       child: TextField(
                         decoration: InputDecoration(
                             border: OutlineInputBorder(borderRadius: BorderRadius.circular(80)),
@@ -126,7 +137,7 @@ class Register_page extends StatelessWidget {
 
                         padding: EdgeInsets.only(top: 3,left: 3),
                         decoration: BoxDecoration(
-                            color: Colors.blue, borderRadius: BorderRadius.circular(80.0),
+                            color: Colors.purple, borderRadius: BorderRadius.circular(80.0),
                            //borderRadius: BorderRadius.circular(0),
                             border: Border(
                                 bottom: BorderSide(color: Colors.black),
@@ -148,7 +159,7 @@ class Register_page extends StatelessWidget {
                             width: 150,
 
                             child: Text ('Sign Up',textAlign: TextAlign.center,
-                              style: TextStyle(fontSize: 25),),
+                              style: TextStyle(fontSize: 25,color: Colors.white),),
 
 
                           ),
@@ -173,7 +184,7 @@ class Register_page extends StatelessWidget {
                     ),
 
 
-                    SizedBox(height: 50,),
+                    SizedBox(height: 100,),
 
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
