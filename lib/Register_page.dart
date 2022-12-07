@@ -232,7 +232,7 @@ Widget makeInput({label,obsureText = false}){
       Text(label,style:TextStyle(
           fontSize: 15,
           fontWeight: FontWeight.w400,
-          color: Colors.black87
+         color: Colors.black87
       ),),
       SizedBox(height: 5,),
       TextField(
