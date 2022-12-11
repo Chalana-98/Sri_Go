@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sri_go/HomePage.dart';
 import 'package:sri_go/Login_page.dart';
 
 void main() {
@@ -38,7 +39,7 @@ class SplashScreenState extends State<MyHomePage> {
     super.initState();
     Timer(Duration(seconds: 5),
         ()=>Navigator.pushReplacement(context,MaterialPageRoute(builder:
-    (context)=>HomeScreen()
+    (context)=>Login_page()
       )
      )
     );
@@ -62,7 +63,12 @@ class SplashScreenState extends State<MyHomePage> {
   
 }
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,7 +76,7 @@ class HomeScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton.extended(
           onPressed: (){
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => Login_page()
+                MaterialPageRoute(builder: (context) => BottomScreen()
                 ));
           },
           //icon: Icon(Icons.ac_unit_sharp),
@@ -176,7 +182,6 @@ class HomeScreen extends StatelessWidget {
 
 
   }
-  
 }
 
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sri_go/HomePage.dart';
 import 'package:sri_go/Register_page.dart';
+import 'package:sri_go/main.dart';
 
 
 class Login_page extends StatelessWidget{
@@ -101,7 +102,7 @@ class Login_page extends StatelessWidget{
                   child: MaterialButton(
                     onPressed: () {
                       Navigator.push(
-                          context, MaterialPageRoute(builder: (_) => HomePage()));
+                          context, MaterialPageRoute(builder: (_) => HomeScreen()));
                     },
 
                     child: Text(
