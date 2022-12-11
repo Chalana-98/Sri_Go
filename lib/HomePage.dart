@@ -1,9 +1,12 @@
 import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:sri_go/CabService_page.dart';
 import 'package:sri_go/Hotels_page.dart';
 import 'package:sri_go/Map_page.dart';
 import 'package:sri_go/Places_page.dart';
+import 'package:sri_go/constant.dart';
 import 'package:sri_go/main.dart';
 
 
@@ -18,34 +21,280 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  /// Controller to handle PageView and also handles initial page
-
-
-
-
-  /// widget list
-
 
 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: primaryColor,
 
-      appBar: AppBar(
+
+      /*appBar: AppBar(
+
         title: Text('Home'),
         backgroundColor: Colors.purple,
 
         leading: IconButton(onPressed: (){
           Navigator.pop(context);
         },icon:Icon(Icons.arrow_back_ios,size: 20,color: Colors.black,)),
+      )*/
+
+
+      body: Column(
+
+        children: [
+
+
+          ///heading
+          Row(
+            
+            //crossAxisAlignment: CrossAxisAlignment.start,
+
+            children: [
+              
+
+              Container(
+                
+
+                height: 120,
+                width: 90,
+                padding: const EdgeInsets.all(8.0),
+
+                child: Image.asset('assets/images/srigo3-01.png',
+                  height: 50,width: 50,
+                ),
+
+              ),
+
+
+
+              Column(
+                
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.end,
+
+                children: [
+                  
+
+
+                  Container(
+
+                    width: 100,
+
+                    child: Text('Sri Go',
+                      style: GoogleFonts.alfaSlabOne(fontSize: 30, color: Colors.brown),
+                    ),
+                  )
+                ],
+              ),
+
+
+              Container(
+
+                width: 200,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+
+
+
+                  children: [
+
+
+                    IconButton(onPressed: (){},
+                        icon:  Icon(Icons.settings),
+                      iconSize: 30,
+
+                    )
+                  ],
+                ),
+              ),
+
+
+
+
+            ],
+
+
+
+          ),
+
+          CarouselSlider(items:[
+            Container(
+            height: 400,
+            child: ListView(
+              scrollDirection: Axis.horizontal ,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: InkWell(
+                    onTap: (){},
+                    child: Container(
+                      width: 310,
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                    ),
+                  ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: InkWell(
+                    onTap: (){},
+                    child: Container(
+                      width: 310,
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: InkWell(
+                    onTap: (){},
+                    child: Container(
+                      width: 310,
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                    ),
+                  ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: InkWell(
+                    onTap: (){},
+                    child: Container(
+                      width: 310,
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                    ),
+                  ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: InkWell(
+                    onTap: (){},
+                    child: Container(
+                      width: 310,
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
+              ],
+              options: CarouselOptions(
+                  height: 500.0,
+                  enlargeCenterPage: true,
+                  autoPlay: true,
+                  aspectRatio: 16 / 9,
+                  autoPlayCurve: Curves.fastOutSlowIn,
+                  enableInfiniteScroll: true,
+                  autoPlayAnimationDuration: Duration(milliseconds: 800),
+                  viewportFraction: 0.8
+              )
+          ),
+
+
+
+          CarouselSlider(
+            items: [
+              Container(
+
+            height: 300,
+            child: ListView(
+              scrollDirection: Axis.horizontal ,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: InkWell(
+                    onTap: (){},
+                    child: Container(
+                      width: 310,
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                    ),
+                  ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: InkWell(
+                    onTap: (){},
+                    child: Container(
+                      width: 310,
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: InkWell(
+                    onTap: (){},
+                    child: Container(
+                      width: 310,
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                    ),
+                  ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: InkWell(
+                    onTap: (){},
+                    child: Container(
+                      width: 310,
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                    ),
+                  ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: InkWell(
+                    onTap: (){},
+                    child: Container(
+                      width: 310,
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
+            ],
+              options: CarouselOptions(
+
+                  height: 100.0,
+                  enlargeCenterPage: true,
+                  autoPlay: true,
+                  aspectRatio: 16 / 9,
+                  autoPlayCurve: Curves.fastOutSlowIn,
+                  enableInfiniteScroll: true,
+                  autoPlayAnimationDuration: Duration(milliseconds: 800),
+                  viewportFraction: 0.8
+              )
+          )
+        ],
       ),
+
+
 
     );
   }
 }
 
 
+// Navigation Bar
 
 
 class BottomScreen extends StatefulWidget {
@@ -94,6 +343,7 @@ class _BottomScreenState extends State<BottomScreen> {
       bottomNavigationBar: (bottomBarPages.length <= maxCount)
           ? AnimatedNotchBottomBar(
         pageController: _pageController,
+
         color: Colors.white,
         showLabel: false,
         notchColor: Colors.purple,
@@ -109,7 +359,7 @@ class _BottomScreenState extends State<BottomScreen> {
 
             activeItem: Icon(
               Icons.home_filled,
-              color: Colors.blueAccent,
+              color: Colors.white,
             ),
             itemLabel: 'Page 1',
           ),
@@ -122,7 +372,7 @@ class _BottomScreenState extends State<BottomScreen> {
             ),
             activeItem: Icon(
               Icons.travel_explore,
-              color: Colors.blueAccent,
+              color: Colors.white,
             ),
             itemLabel: 'Page 2',
           ),
@@ -135,7 +385,7 @@ class _BottomScreenState extends State<BottomScreen> {
             ),
             activeItem: Icon(
               Icons.car_crash_outlined,
-              color: Colors.pink,
+              color: Colors.white,
             ),
             itemLabel: 'Page 4',
           ),
@@ -147,7 +397,7 @@ class _BottomScreenState extends State<BottomScreen> {
             ),
             activeItem: Icon(
               Icons.hotel,
-              color: Colors.yellow,
+              color: Colors.white,
             ),
             itemLabel: 'Page 5',
           ),
@@ -159,16 +409,16 @@ class _BottomScreenState extends State<BottomScreen> {
             ),
             activeItem: Icon(
               Icons.place,
-              color: Colors.yellow,
+              color: Colors.white,
             ),
-            itemLabel: 'Page 5',
+            itemLabel: 'Page 6',
           ),
         ],
         onTap: (index) {
           /// control your animation using page controller
           _pageController.animateToPage(
             index,
-            duration: const Duration(milliseconds: 500),
+            duration: const Duration(milliseconds: 100),
             curve: Curves.easeIn,
           );
         },

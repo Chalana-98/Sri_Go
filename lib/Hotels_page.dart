@@ -20,6 +20,9 @@ class _Hotels_pageState extends State<Hotels_page> {
           Navigator.pop(context);
         },icon:Icon(Icons.arrow_back_ios,size: 20,color: Colors.black,)),
       ),
+
+
+
     );
   }
 }

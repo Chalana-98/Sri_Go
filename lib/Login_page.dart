@@ -25,6 +25,7 @@ class Login_page extends StatelessWidget{
 
 
         body: Container(
+          height: double.infinity,
           decoration: const BoxDecoration(
               image: DecorationImage(
                   image: AssetImage(
