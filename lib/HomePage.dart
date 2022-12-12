@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: primaryColor,
+      backgroundColor: Colors.white,
 
 
       /*appBar: AppBar(
@@ -83,7 +83,7 @@ class _HomePageState extends State<HomePage> {
                     width: 100,
 
                     child: Text('Sri Go',
-                      style: GoogleFonts.alfaSlabOne(fontSize: 30, color: Colors.brown),
+                      style: GoogleFonts.alfaSlabOne(fontSize: 30, color: Colors.purple),
                     ),
                   )
                 ],
