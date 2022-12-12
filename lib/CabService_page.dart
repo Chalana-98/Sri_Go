@@ -18,6 +18,23 @@ class _CabServiceState extends State<CabService> {
           Navigator.pop(context);
         },icon:Icon(Icons.arrow_back_ios,size: 20,color: Colors.black,)),
       ),
+
+      body:  Center(
+        child: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  begin: Alignment.topRight,
+                  end: Alignment.bottomLeft,
+                  colors: [
+                    Colors.black87,
+                    Colors.purple
+
+                  ]
+
+              )
+          ),
+        ),
+      ),
     );
   }
 }

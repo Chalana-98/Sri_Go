@@ -22,7 +22,22 @@ class _Hotels_pageState extends State<Hotels_page> {
       ),
 
 
+      body:  Center(
+        child: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  begin: Alignment.topRight,
+                  end: Alignment.bottomLeft,
+                  colors: [
+                    Colors.black87,
+                    Colors.purple
 
+                  ]
+
+              )
+          ),
+        ),
+      ),
     );
   }
 }

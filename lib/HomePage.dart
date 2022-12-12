@@ -6,8 +6,6 @@ import 'package:sri_go/CabService_page.dart';
 import 'package:sri_go/Hotels_page.dart';
 import 'package:sri_go/Map_page.dart';
 import 'package:sri_go/Places_page.dart';
-import 'package:sri_go/constant.dart';
-import 'package:sri_go/main.dart';
 
 
 
@@ -41,250 +39,266 @@ class _HomePageState extends State<HomePage> {
       )*/
 
 
-      body: Column(
+      body: Center(
+        child: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  begin: Alignment.topRight,
+                  end: Alignment.bottomLeft,
+                  colors: [
+                    Colors.black87,
+                    Colors.purple
 
-        children: [
+                  ]
 
-
-          ///heading
-          Row(
-            
-            //crossAxisAlignment: CrossAxisAlignment.start,
+              )
+          ),
+          child: Column(
 
             children: [
-              
-
-              Container(
-                
-
-                height: 120,
-                width: 90,
-                padding: const EdgeInsets.all(8.0),
-
-                child: Image.asset('assets/images/srigo3-01.png',
-                  height: 50,width: 50,
-                ),
-
-              ),
 
 
+              ///heading
+              Row(
 
-              Column(
-                
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.end,
+                //crossAxisAlignment: CrossAxisAlignment.start,
 
                 children: [
-                  
 
 
                   Container(
 
-                    width: 100,
 
-                    child: Text('Sri Go',
-                      style: GoogleFonts.alfaSlabOne(fontSize: 30, color: Colors.purple),
+                    height: 120,
+                    width: 90,
+                    padding: const EdgeInsets.all(8.0),
+
+                    child: Image.asset('assets/images/srigo3-01.png',
+                      height: 50,width: 50,
                     ),
-                  )
+
+                  ),
+
+
+
+                  Column(
+
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+
+                    children: [
+
+
+
+                      Container(
+
+                        width: 100,
+
+                        child: Text('Sri Go',
+                          style: GoogleFonts.alfaSlabOne(fontSize: 30, color: Colors.white),
+                        ),
+                      )
+                    ],
+                  ),
+
+
+                  Container(
+
+                    width: 200,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+
+
+
+                      children: [
+
+
+                        IconButton(onPressed: (){},
+                            icon:  Icon(Icons.settings),
+                          iconSize: 30,
+
+                        )
+                      ],
+                    ),
+                  ),
+
+
+
+
                 ],
+
+
+
               ),
 
-
-              Container(
-
-                width: 200,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-
-
-
+              CarouselSlider(items:[
+                Container(
+                height: 400,
+                child: ListView(
+                  scrollDirection: Axis.horizontal ,
                   children: [
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: InkWell(
+                        onTap: (){},
+                        child: Container(
+                          width: 310,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                          child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                        ),
+                      ),
+                    ),
 
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: InkWell(
+                        onTap: (){},
+                        child: Container(
+                          width: 310,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                          child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: InkWell(
+                        onTap: (){},
+                        child: Container(
+                          width: 310,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                          child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                        ),
+                      ),
+                    ),
 
-                    IconButton(onPressed: (){},
-                        icon:  Icon(Icons.settings),
-                      iconSize: 30,
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: InkWell(
+                        onTap: (){},
+                        child: Container(
+                          width: 310,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                          child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                        ),
+                      ),
+                    ),
 
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: InkWell(
+                        onTap: (){},
+                        child: Container(
+                          width: 310,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                          child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                        ),
+                      ),
                     )
                   ],
                 ),
               ),
+                  ],
+                  options: CarouselOptions(
+                      height: 500.0,
+                      enlargeCenterPage: true,
+                      autoPlay: true,
+                      aspectRatio: 16 / 9,
+                      autoPlayCurve: Curves.fastOutSlowIn,
+                      enableInfiniteScroll: true,
+                      autoPlayAnimationDuration: Duration(milliseconds: 800),
+                      viewportFraction: 0.8
+                  )
+              ),
 
 
 
+              CarouselSlider(
+                items: [
+                  Container(
 
-            ],
-
-
-
-          ),
-
-          CarouselSlider(items:[
-            Container(
-            height: 400,
-            child: ListView(
-              scrollDirection: Axis.horizontal ,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: InkWell(
-                    onTap: (){},
-                    child: Container(
-                      width: 310,
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
-                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                height: 300,
+                child: ListView(
+                  scrollDirection: Axis.horizontal ,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: InkWell(
+                        onTap: (){},
+                        child: Container(
+                          width: 310,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                          child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                        ),
+                      ),
                     ),
-                  ),
+
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: InkWell(
+                        onTap: (){},
+                        child: Container(
+                          width: 310,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                          child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: InkWell(
+                        onTap: (){},
+                        child: Container(
+                          width: 310,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                          child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                        ),
+                      ),
+                    ),
+
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: InkWell(
+                        onTap: (){},
+                        child: Container(
+                          width: 310,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                          child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                        ),
+                      ),
+                    ),
+
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: InkWell(
+                        onTap: (){},
+                        child: Container(
+                          width: 310,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
+                          child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
+                        ),
+                      ),
+                    )
+                  ],
                 ),
+              ),
+                ],
+                  options: CarouselOptions(
 
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: InkWell(
-                    onTap: (){},
-                    child: Container(
-                      width: 310,
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
-                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: InkWell(
-                    onTap: (){},
-                    child: Container(
-                      width: 310,
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
-                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
-                    ),
-                  ),
-                ),
-
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: InkWell(
-                    onTap: (){},
-                    child: Container(
-                      width: 310,
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
-                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
-                    ),
-                  ),
-                ),
-
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: InkWell(
-                    onTap: (){},
-                    child: Container(
-                      width: 310,
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
-                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
-                    ),
-                  ),
-                )
-              ],
-            ),
-          ),
-              ],
-              options: CarouselOptions(
-                  height: 500.0,
-                  enlargeCenterPage: true,
-                  autoPlay: true,
-                  aspectRatio: 16 / 9,
-                  autoPlayCurve: Curves.fastOutSlowIn,
-                  enableInfiniteScroll: true,
-                  autoPlayAnimationDuration: Duration(milliseconds: 800),
-                  viewportFraction: 0.8
+                      height: 100.0,
+                      enlargeCenterPage: true,
+                      autoPlay: true,
+                      aspectRatio: 16 / 9,
+                      autoPlayCurve: Curves.fastOutSlowIn,
+                      enableInfiniteScroll: true,
+                      autoPlayAnimationDuration: Duration(milliseconds: 800),
+                      viewportFraction: 0.8
+                  )
               )
-          ),
-
-
-
-          CarouselSlider(
-            items: [
-              Container(
-
-            height: 300,
-            child: ListView(
-              scrollDirection: Axis.horizontal ,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: InkWell(
-                    onTap: (){},
-                    child: Container(
-                      width: 310,
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
-                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
-                    ),
-                  ),
-                ),
-
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: InkWell(
-                    onTap: (){},
-                    child: Container(
-                      width: 310,
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
-                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: InkWell(
-                    onTap: (){},
-                    child: Container(
-                      width: 310,
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
-                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
-                    ),
-                  ),
-                ),
-
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: InkWell(
-                    onTap: (){},
-                    child: Container(
-                      width: 310,
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
-                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
-                    ),
-                  ),
-                ),
-
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: InkWell(
-                    onTap: (){},
-                    child: Container(
-                      width: 310,
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black38),
-                      child: Text("List view1",style: TextStyle(fontSize: 32,color: Colors.white),),
-                    ),
-                  ),
-                )
-              ],
-            ),
-          ),
             ],
-              options: CarouselOptions(
-
-                  height: 100.0,
-                  enlargeCenterPage: true,
-                  autoPlay: true,
-                  aspectRatio: 16 / 9,
-                  autoPlayCurve: Curves.fastOutSlowIn,
-                  enableInfiniteScroll: true,
-                  autoPlayAnimationDuration: Duration(milliseconds: 800),
-                  viewportFraction: 0.8
-              )
-          )
-        ],
+          ),
+        ),
       ),
 
 
