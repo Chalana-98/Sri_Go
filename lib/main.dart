@@ -1,14 +1,21 @@
 import 'dart:async';
 
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sri_go/HomePage.dart';
 import 'package:sri_go/Login_page.dart';
 
-void main() {
+Future main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
+
 }
+
+
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

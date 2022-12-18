@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1003412633626",
+    "project_id": "srigo-371401",
+    "storage_bucket": "srigo-371401.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003412633626:android:4662b30ee6bef61886b9a3",
+        "android_client_info": {
+          "package_name": "com.example.sri_go"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003412633626-9pjl9qsu5q3l2icjl7r4716uu600vov8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuZ95fj9Fa79WL6zGus208Gv-NyQne8lQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003412633626-9pjl9qsu5q3l2icjl7r4716uu600vov8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

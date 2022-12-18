@@ -36,8 +36,178 @@ class _Hotels_pageState extends State<Hotels_page> {
 
               )
           ),
-        ),
+          child:  Container(
+        child: GridView(
+
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,crossAxisSpacing: 2,),
+
+        primary: false,
+        padding: const EdgeInsets.all(10),
+        children: [
+          Card(
+
+
+            color: Colors.white,
+            child: Column(
+
+              children: [
+                Text('01')
+              ],
+            ),
+          ),
+
+          Card(
+            color: Colors.white,
+
+            child: Column(
+              children: [
+
+                TextButton(onPressed: (){},
+                    child:Text("view detail")),
+
+                Text('01')
+              ],
+            ),
+          ),
+          Card(
+            color: Colors.white,
+
+            child: Column(
+              children: [
+
+                TextButton(onPressed: (){},
+                    child:Text("view detail")),
+
+                Text('01')
+              ],
+            ),
+          ),
+          Card(
+            color: Colors.white,
+
+            child: Column(
+              children: [
+
+                TextButton(onPressed: (){},
+                    child:Text("view detail")),
+
+                Text('01')
+              ],
+            ),
+          ),
+          Card(
+            color: Colors.white,
+
+            child: Column(
+              children: [
+
+                TextButton(onPressed: (){},
+                    child:Text("view detail")),
+
+                Text('01')
+              ],
+            ),
+          ),
+          Card(
+            color: Colors.white,
+
+            child: Column(
+              children: [
+
+                TextButton(onPressed: (){},
+                    child:Text("view detail")),
+
+                Text('01')
+              ],
+            ),
+          ),
+          Card(
+            color: Colors.white,
+
+            child: Column(
+              children: [
+
+                TextButton(onPressed: (){},
+                    child:Text("view detail")),
+
+                Text('01')
+              ],
+            ),
+          ),
+          Card(
+            color: Colors.white,
+
+            child: Column(
+              children: [
+
+                TextButton(onPressed: (){},
+                    child:Text("view detail")),
+
+                Text('01')
+              ],
+            ),
+          ),
+          Card(
+            color: Colors.white,
+
+            child: Column(
+              children: [
+
+                TextButton(onPressed: (){},
+                    child:Text("view detail")),
+
+                Text('01')
+              ],
+            ),
+          ),
+          Card(
+            color: Colors.white,
+
+            child: Column(
+              children: [
+
+                TextButton(onPressed: (){},
+                    child:Text("view detail")),
+
+                Text('01')
+              ],
+            ),
+          ),
+          Card(
+            color: Colors.white,
+
+            child: Column(
+              children: [
+
+                TextButton(onPressed: (){},
+                    child:Text("view detail")),
+
+                Text('01')
+              ],
+            ),
+          ),
+          Card(
+            color: Colors.white,
+
+            child: Column(
+              children: [
+
+                TextButton(onPressed: (){},
+                    child:Text("view detail")),
+
+                Text('01')
+              ],
+            ),
+          ),
+
+
+        ],
       ),
+    ),
+        ),
+
+      ),
+
     );
   }
 }

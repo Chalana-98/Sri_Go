@@ -33,174 +33,239 @@ class _CabServiceState extends State<CabService> {
 
               )
           ),
-         child: Container(
-            child: GridView(
-              
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,crossAxisSpacing: 2,),
-              
-              primary: false,
-              padding: const EdgeInsets.all(10),
-              children: [
-               Card(
+
+          child: ListView(
 
 
-                 color: Colors.white,
-                 child: Column(
+            children:  <Widget>[
 
-                   children: [
-                     Text('01')
-                   ],
-                 ),
-               ),
 
-                Card(
-                  color: Colors.white,
+              Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
 
-                  child: Column(
-                    children: [
 
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
 
-                      Text('01')
-                    ],
-                  ),
+                child: ListTile(
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: GestureDetector(
+                      onTap: (){
+
+                      },
+                      child: Card(
+                        color: Colors.black12,
+                        shadowColor: Colors.black12,
+                        child: Icon(Icons.arrow_forward_ios,color: Colors.white),
+                      )),
                 ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
                 ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
                 ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
                 ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
                 ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
                 ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
                 ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
                 ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
                 ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
                 ),
-                Card(
-                  color: Colors.white,
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
+                ),
+              ),
+              Card(
 
-                  child: Column(
-                    children: [
 
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile',style: TextStyle(fontSize: 20),),
 
-                      Text('01')
-                    ],
-                  ),
+
+                  trailing: Icon(Icons.arrow_forward_ios),
                 ),
 
+              ),
 
-              ],
-            ),
-         ),
+              Card(
+                child: ListTile(
+                  leading: FlutterLogo(size: 56.0),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: Icon(Icons.more_vert),
+
+                ),
+              ),
+
+            ],
+
+
+          ),
         ),
 
 
