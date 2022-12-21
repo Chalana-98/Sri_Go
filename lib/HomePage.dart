@@ -25,29 +25,77 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      endDrawer:
+      Drawer(
+        child: ListView(
+          // Important: Remove any padding from the ListView.
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            UserAccountsDrawerHeader(
+              accountName: Text("ABC"),
+              accountEmail: Text("ABC"),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: Colors.white,
+                child: Text(
+                  "A",
+                  style: TextStyle(fontSize: 40.0),
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.person), title: Text("profile"),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.settings), title: Text("Settings"),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+
+            ListTile(
+              leading: Icon(Icons.account_circle_outlined), title: Text("LogOut"),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.contacts), title: Text("About Us"),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
+      ),
+
       backgroundColor: Colors.white,
 
 
-      /*appBar: AppBar(
+      appBar: AppBar(
 
-        title: Text('Home'),
+        title: Text('Sri Go',style: GoogleFonts.allison(fontSize: 50, color: Colors.greenAccent),),
         backgroundColor: Colors.purple,
 
         leading: IconButton(onPressed: (){
           Navigator.pop(context);
         },icon:Icon(Icons.arrow_back_ios,size: 20,color: Colors.black,)),
-      )*/
+      ),
 
 
       body: Center(
+
         child: Container(
+
           decoration: BoxDecoration(
               gradient: LinearGradient(
                   begin: Alignment.topRight,
                   end: Alignment.bottomLeft,
                   colors: [
-                    Colors.black87,
-                    Colors.purple
+                    Colors.greenAccent,
+                    Colors.purple.shade600
 
                   ]
 
@@ -55,51 +103,25 @@ class _HomePageState extends State<HomePage> {
           ),
           child: Column(
 
+
             children: [
+
 
 
               ///heading
               Row(
+
+
 
                 //crossAxisAlignment: CrossAxisAlignment.start,
 
                 children: [
 
 
-                  Container(
-
-
-                    height: 120,
-                    width: 90,
-                    padding: const EdgeInsets.all(8.0),
-
-                    child: Image.asset('assets/images/srigo3-01.png',
-                      height: 50,width: 50,
-                    ),
-
-                  ),
 
 
 
-                  Column(
 
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.end,
-
-                    children: [
-
-
-
-                      Container(
-
-                        width: 100,
-
-                        child: Text('Sri Go',
-                          style: GoogleFonts.alfaSlabOne(fontSize: 30, color: Colors.white),
-                        ),
-                      )
-                    ],
-                  ),
 
 
                   Container(
@@ -114,11 +136,12 @@ class _HomePageState extends State<HomePage> {
                       children: [
 
 
-                        IconButton(onPressed: (){},
+                        /*IconButton(onPressed: (){},
                             icon:  Icon(Icons.settings),
                           iconSize: 30,
 
-                        )
+
+                        )*/
                       ],
                     ),
                   ),

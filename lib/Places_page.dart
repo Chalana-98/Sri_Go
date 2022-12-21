@@ -40,7 +40,7 @@ class _Place_pageState extends State<Place_page> {
               begin: Alignment.topRight,
               end: Alignment.bottomLeft,
               colors: [
-                Colors.black87,
+                Colors.greenAccent,
                 Colors.purple
 
               ]

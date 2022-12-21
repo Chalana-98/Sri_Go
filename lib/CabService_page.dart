@@ -26,7 +26,7 @@ class _CabServiceState extends State<CabService> {
                   begin: Alignment.topRight,
                   end: Alignment.bottomLeft,
                   colors: [
-                    Colors.black87,
+                    Colors.greenAccent,
                     Colors.purple
 
                   ]

@@ -223,12 +223,12 @@ class _Register_pageState extends State<Register_page> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       SizedBox(
-                          height: 150,
+                          height: 100,
                           child: Image.asset(
                             "assets/images/srigo3-01.png",
                             fit: BoxFit.contain,
                           )),
-                      SizedBox(height: 45),
+                      SizedBox(height: 5),
                       firstNameField,
                       SizedBox(height: 20),
                       secondNameField,

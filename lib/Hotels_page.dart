@@ -29,7 +29,7 @@ class _Hotels_pageState extends State<Hotels_page> {
                   begin: Alignment.topRight,
                   end: Alignment.bottomLeft,
                   colors: [
-                    Colors.black87,
+                    Colors.greenAccent,
                     Colors.purple
 
                   ]
