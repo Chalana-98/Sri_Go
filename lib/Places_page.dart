@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,14 +13,12 @@ class Place_page extends StatefulWidget {
 }
 
 class _Place_pageState extends State<Place_page> {
+
+  final Stream<QuerySnapshot> _PlaceStream = FirebaseFirestore.instance.collection('Places').snapshots();
   @override
   Widget build(BuildContext context) {
 
-    var arrDistrics = ['Ampara',"Anuradhapura,",'Badulla','Batticaloa',
-                         'Colombo','Galle','Gampaha','Hambantota','Jaffna','Kalutara',
-                       'Kandy','Kegalle','Kilinochchi','Kurunegala','Mannar','Matale',
-                      'Matara','Monaragala','Mullaitivu','Nuwara Eliya','Polonnaruwa',
-               'Puttalam','Ratnapura','Trincomalee','Vavuniya'];
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Place'),
@@ -47,7 +46,7 @@ class _Place_pageState extends State<Place_page> {
 
             )
           ),
-
+  
           child: Container(
             child: GridView(
 
@@ -57,14 +56,35 @@ class _Place_pageState extends State<Place_page> {
               padding: const EdgeInsets.all(10),
               children: [
                 Card(
-
-
                   color: Colors.white,
-                  child: Column(
 
-                    children: [
-                      Text('01')
-                    ],
+
+                  child: Container(
+                    decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                            begin: Alignment.topRight,
+                            end: Alignment.bottomLeft,
+                            colors: [
+                              Colors.greenAccent,
+                              Colors.purple.shade600
+                            ]
+                        )
+                    ),
+
+                    child: Column(
+
+                      children: [
+
+                        Container(
+
+                            child: Image.asset('assets/images/anu1.jpg',height: 130,width: 140,)),
+
+                        TextButton(onPressed: (){
+
+                        },
+                            child:Text("view detail", style: TextStyle(color: Colors.black),)),
+                      ],
+                    ),
                   ),
                 ),
 
@@ -76,6 +96,7 @@ class _Place_pageState extends State<Place_page> {
 
                       TextButton(onPressed: (){},
                           child:Text("view detail")),
+
 
                       Text('01')
                     ],
@@ -221,4 +242,20 @@ class _Place_pageState extends State<Place_page> {
       ),
     );
   }
+  
 }
+
+class Places extends StatefulWidget {
+  const Places({Key? key}) : super(key: key);
+
+  @override
+  State<Places> createState() => _PlacesState();
+}
+
+class _PlacesState extends State<Places> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+

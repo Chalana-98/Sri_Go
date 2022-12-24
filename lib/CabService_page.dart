@@ -54,9 +54,9 @@ class _CabServiceState extends State<CabService> {
                   subtitle: Text('Here is a second line'),
                   trailing: GestureDetector(
                       onTap: (){
-
                       },
                       child: Card(
+
                         color: Colors.black12,
                         shadowColor: Colors.black12,
                         child: Icon(Icons.arrow_forward_ios,color: Colors.white),
