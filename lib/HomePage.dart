@@ -2,6 +2,7 @@ import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_not
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:search_map_place_updated/search_map_place_updated.dart';
 import 'package:sri_go/CabService_page.dart';
 import 'package:sri_go/Hotels_page.dart';
 import 'package:sri_go/Map_page.dart';

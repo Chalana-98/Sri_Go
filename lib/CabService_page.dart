@@ -44,6 +44,42 @@ class _CabServiceState extends State<CabService> {
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
                 color: Color.fromARGB(80, 20, 64, 33),
 
+                child: ListTile(
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: GestureDetector(
+                      onTap: (){},
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+                  ),
+                ),
+              ),
+
+              Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+                child: ListTile(
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
+                  title: Text('Two-line ListTile'),
+                  subtitle: Text('Here is a second line'),
+                  trailing: GestureDetector(
+                      onTap: (){},
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+                  ),
+                ),
+              ),
+              Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
 
 
                 child: ListTile(
@@ -53,166 +89,453 @@ class _CabServiceState extends State<CabService> {
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
                   trailing: GestureDetector(
+
                       onTap: (){
                       },
-                      child: Card(
 
-                        color: Colors.black12,
-                        shadowColor: Colors.black12,
-                        child: Icon(Icons.arrow_forward_ios,color: Colors.white),
-                      )),
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){},
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                color: Color.fromARGB(80, 20, 64, 33),
+
+
+
                 child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
+
+
+                  //leading: CircleAvatar(backgroundImage: AssetImage('assets/images/srigo3-01.png') ),
                   title: Text('Two-line ListTile'),
                   subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
-                  title: Text('Two-line ListTile'),
-                  subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  leading: FlutterLogo(size: 56.0),
-                  title: Text('Two-line ListTile'),
-                  subtitle: Text('Here is a second line'),
-                  trailing: Icon(Icons.more_vert),
+                  trailing: GestureDetector(
+
+                      onTap: (){
+                      },
+
+                      child: Column(
+                        children: [
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      )
+
+                  ),
                 ),
               ),
               Card(

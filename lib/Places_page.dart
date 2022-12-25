@@ -46,204 +46,19 @@ class _Place_pageState extends State<Place_page> {
 
             )
           ),
-  
-          child: Container(
-            child: GridView(
+          child: Places(),
 
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,crossAxisSpacing: 2,),
-
-              primary: false,
-              padding: const EdgeInsets.all(10),
-              children: [
-                Card(
-                  color: Colors.white,
-
-
-                  child: Container(
-                    decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                            begin: Alignment.topRight,
-                            end: Alignment.bottomLeft,
-                            colors: [
-                              Colors.greenAccent,
-                              Colors.purple.shade600
-                            ]
-                        )
-                    ),
-
-                    child: Column(
-
-                      children: [
-
-                        Container(
-
-                            child: Image.asset('assets/images/anu1.jpg',height: 130,width: 140,)),
-
-                        TextButton(onPressed: (){
-
-                        },
-                            child:Text("view detail", style: TextStyle(color: Colors.black),)),
-                      ],
-                    ),
-                  ),
-                ),
-
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-
-                      Text('01')
-                    ],
-                  ),
-                ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
-                ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
-                ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
-                ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
-                ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
-                ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
-                ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
-                ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
-                ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
-                ),
-                Card(
-                  color: Colors.white,
-
-                  child: Column(
-                    children: [
-
-                      TextButton(onPressed: (){},
-                          child:Text("view detail")),
-
-                      Text('01')
-                    ],
-                  ),
-                ),
-
-
-              ],
-            ),
-          ),
         ),
 
       ),
+
+
     );
+
   }
   
 }
+
 
 class Places extends StatefulWidget {
   const Places({Key? key}) : super(key: key);
@@ -253,9 +68,488 @@ class Places extends StatefulWidget {
 }
 
 class _PlacesState extends State<Places> {
+
+  final Stream<QuerySnapshot> _placeStream = FirebaseFirestore.instance.collection('Places').snapshots();
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return StreamBuilder<QuerySnapshot>(
+      stream: _placeStream,
+      builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
+      if (snapshot.hasError) {
+        return Text('Something went wrong');
+      }
+
+      if (snapshot.connectionState == ConnectionState.waiting) {
+        return Text("Loading");
+      }
+
+      return Container(
+
+        child: GridView(
+
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,crossAxisSpacing: 2,),
+
+          primary: false,
+          padding: const EdgeInsets.all(10),
+          children: [
+            Card(
+              color: Colors.white,
+
+
+              child: Container(
+
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black,
+                      blurRadius: 10
+
+                    )
+                  ],
+
+                    gradient: LinearGradient(
+                        begin: Alignment.topRight,
+                        end: Alignment.bottomLeft,
+                        colors: [
+
+                          Colors.deepPurple,
+                          Colors.greenAccent
+                        ]
+                    )
+                ),
+
+                child: Column(
+
+                  children: [
+
+                    Container(
+
+                        child: Image.asset('assets/images/anu1.jpg',height: 130,width: 140,)),
+
+                    TextButton(onPressed: (){
+
+                    },
+                        child:Text("view detail", style: TextStyle(color: Colors.black),)),
+                  ],
+                ),
+              ),
+            ),
+
+            Card(
+                color: Colors.white,
+
+
+                child: Container(
+
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10
+
+                        )
+                      ],
+
+                      gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                          colors: [
+
+                            Colors.deepPurple,
+                            Colors.greenAccent
+                          ]
+                      )
+                  ),
+
+                  child: Column(
+
+                    children: [
+
+                      TextButton(onPressed: (){
+
+                      },
+                          child:Text("view detail", style: TextStyle(color: Colors.black),)),
+                    ],
+                  ),
+                )
+            ),
+
+            Card(
+                color: Colors.white,
+
+
+                child: Container(
+
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10
+
+                        )
+                      ],
+
+                      gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                          colors: [
+
+                            Colors.deepPurple,
+                            Colors.greenAccent
+                          ]
+                      )
+                  ),
+
+                  child: Column(
+
+                    children: [
+
+                      TextButton(onPressed: (){
+
+                      },
+                          child:Text("view detail", style: TextStyle(color: Colors.black),)),
+                    ],
+                  ),
+                )
+            ),
+            Card(
+                color: Colors.white,
+
+
+                child: Container(
+
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10
+
+                        )
+                      ],
+
+                      gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                          colors: [
+
+                            Colors.deepPurple,
+                            Colors.greenAccent
+                          ]
+                      )
+                  ),
+
+                  child: Column(
+
+                    children: [
+
+                      TextButton(onPressed: (){
+
+                      },
+                          child:Text("view detail", style: TextStyle(color: Colors.black),)),
+                    ],
+                  ),
+                )
+            ),
+            Card(
+                color: Colors.white,
+
+
+                child: Container(
+
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10
+
+                        )
+                      ],
+
+                      gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                          colors: [
+
+                            Colors.deepPurple,
+                            Colors.greenAccent
+                          ]
+                      )
+                  ),
+
+                  child: Column(
+
+                    children: [
+
+                      TextButton(onPressed: (){
+
+                      },
+                          child:Text("view detail", style: TextStyle(color: Colors.black),)),
+                    ],
+                  ),
+                )
+            ),
+            Card(
+                color: Colors.white,
+
+
+                child: Container(
+
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10
+
+                        )
+                      ],
+
+                      gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                          colors: [
+
+                            Colors.deepPurple,
+                            Colors.greenAccent
+                          ]
+                      )
+                  ),
+
+                  child: Column(
+
+                    children: [
+
+                      TextButton(onPressed: (){
+
+                      },
+                          child:Text("view detail", style: TextStyle(color: Colors.black),)),
+                    ],
+                  ),
+                )
+            ),
+            Card(
+                color: Colors.white,
+
+
+                child: Container(
+
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10
+
+                        )
+                      ],
+
+                      gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                          colors: [
+
+                            Colors.deepPurple,
+                            Colors.greenAccent
+                          ]
+                      )
+                  ),
+
+                  child: Column(
+
+                    children: [
+
+                      TextButton(onPressed: (){
+
+                      },
+                          child:Text("view detail", style: TextStyle(color: Colors.black),)),
+                    ],
+                  ),
+                )
+            ),
+            Card(
+                color: Colors.white,
+
+
+                child: Container(
+
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10
+
+                        )
+                      ],
+
+                      gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                          colors: [
+
+                            Colors.deepPurple,
+                            Colors.greenAccent
+                          ]
+                      )
+                  ),
+
+                  child: Column(
+
+                    children: [
+
+                      TextButton(onPressed: (){
+
+                      },
+                          child:Text("view detail", style: TextStyle(color: Colors.black),)),
+                    ],
+                  ),
+                )
+            ),
+            Card(
+                color: Colors.white,
+
+
+                child: Container(
+
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10
+
+                        )
+                      ],
+
+                      gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                          colors: [
+
+                            Colors.deepPurple,
+                            Colors.greenAccent
+                          ]
+                      )
+                  ),
+
+                  child: Column(
+
+                    children: [
+
+                      TextButton(onPressed: (){
+
+                      },
+                          child:Text("view detail", style: TextStyle(color: Colors.black),)),
+                    ],
+                  ),
+                )
+            ),
+            Card(
+                color: Colors.white,
+
+
+                child: Container(
+
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10
+
+                        )
+                      ],
+
+                      gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                          colors: [
+
+                            Colors.deepPurple,
+                            Colors.greenAccent
+                          ]
+                      )
+                  ),
+
+                  child: Column(
+
+                    children: [
+
+                      TextButton(onPressed: (){
+
+                      },
+                          child:Text("view detail", style: TextStyle(color: Colors.black),)),
+                    ],
+                  ),
+                )
+            ),
+            Card(
+                color: Colors.white,
+
+
+                child: Container(
+
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10
+
+                        )
+                      ],
+
+                      gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                          colors: [
+
+                            Colors.deepPurple,
+                            Colors.greenAccent
+                          ]
+                      )
+                  ),
+
+                  child: Column(
+
+                    children: [
+
+                      TextButton(onPressed: (){
+
+                      },
+                          child:Text("view detail", style: TextStyle(color: Colors.black),)),
+                    ],
+                  ),
+                )
+            ),
+            Card(
+              color: Colors.white,
+
+              child: Column(
+                children: [
+
+                  TextButton(onPressed: (){},
+                      child:Text("view detail")),
+
+                  Text('01')
+                ],
+              ),
+            ),
+
+
+          ],
+        ),
+
+
+      );/*ListView(
+        children: snapshot.data!.docs.map((DocumentSnapshot document) {
+          Map<String, dynamic> data = document.data()! as Map<String, dynamic>;
+          return ListTile(
+            title: Text(data['full_name']),
+            subtitle: Text(data['company']),
+          );
+        }).toList(),
+      );*/
+
+
+    },
+    );
+
   }
 }
 
